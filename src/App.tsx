@@ -22,9 +22,15 @@ function App() {
         </div>
         <hr/>
         <button onClick={()=>{
-            setPlay1Counter(play1Counter-1)
-            setPlay2Counter(play2Counter-1)
+           /* setPlay1Counter(play1Counter-1)
+            setPlay2Counter(play2Counter-1)*/
+            setPlay1Counter((actual)=>actual-1)
+            setPlay2Counter((actual)=>actual-1)
         }}>-</button>
+        <button onClick={()=>{
+            setPlay1Counter(10)
+            setPlay2Counter(10)
+        }}>reset</button>
     </div>
   );
 }

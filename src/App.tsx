@@ -10,13 +10,15 @@ function App() {
      <div>
          <div>Иван Иванов</div>
          <div>{ play1Counter}</div>
-         <button onClick={()=>{setPlay1Counter(play1Counter+1)}}>+</button>
+        {/* <button onClick={()=>{setPlay1Counter(play1Counter+1)}}>+</button>*/}
+         <button onClick={()=>{setPlay1Counter((actual)=>actual+1)}}>+</button>
      </div>
         <hr/>
         <div>
             <div>Петя Петров</div>
             <div>{play2Counter}</div>
-            <button onClick={()=>setPlay2Counter(play2Counter+1)}>+</button>
+          {/*  <button onClick={()=>setPlay2Counter(play2Counter+1)}>+</button>*/}
+            <button onClick={()=>setPlay2Counter((actual)=>actual+1)}>+</button>
         </div>
         <hr/>
         <button onClick={()=>{
